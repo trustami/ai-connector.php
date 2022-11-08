@@ -13,8 +13,6 @@ composer require trustami/trustami-ai
 ```php
 <?php
 
-<?php
-
 require 'vendor/autoload.php';
 
 use Trustami\TrustamiAi\LangDetector;
