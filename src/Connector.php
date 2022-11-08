@@ -22,7 +22,8 @@ class Connector
 		curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 			'Content-Type: application/json',
-			'Content-Length: ' . strlen(json_encode($data))
+			'Content-Length: ' . strlen(json_encode($data)),
+			'Authorization: Bearer ' . $this->token
 		));
 
 		$result = curl_exec($ch);
