@@ -1,0 +1,16 @@
+{
+	"name": "trustami/trustami-ai",
+	"description": "A connector for the Trustami.AI API.",
+	"autoload": {
+		"psr-4": {
+			"Trustami\\TrustamiAi\\": "src/"
+		}
+	},
+	"authors": [
+		{
+			"name": "Laura",
+			"email": "lab@trustami.com"
+		}
+	],
+	"require": {}
+}
