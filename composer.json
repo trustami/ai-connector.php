@@ -1,6 +1,7 @@
 {
 	"name": "trustami/trustami-ai",
 	"description": "A connector for the Trustami.AI API.",
+	"license": "ISC",
 	"autoload": {
 		"psr-4": {
 			"Trustami\\TrustamiAi\\": "src/"
