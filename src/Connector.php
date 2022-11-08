@@ -38,6 +38,6 @@ class Connector
 			throw new \Exception($data["error"]);
 		}
 
-		return $result;
+		return $data;
 	}
 }
