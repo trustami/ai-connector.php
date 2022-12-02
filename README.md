@@ -16,6 +16,8 @@ composer require trustami/trustami-ai
 require 'vendor/autoload.php';
 
 use Trustami\TrustamiAi\LangDetector;
+use Trustami\TrustamiAi\Sentiment;
+use Trustami\TrustamiAi\Summarizer;
 
 $detector = new LangDetector("YOUR_TOKEN_HERE");
 
