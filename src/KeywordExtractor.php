@@ -1,7 +1,7 @@
 <?php
 namespace Trustami\TrustamiAi;
 
-class Tokenizer extends Connector
+class KeywordExtractor extends Connector
 {
     public function __construct(string $token)
     {
@@ -19,7 +19,7 @@ class Tokenizer extends Connector
      * @param float $diversity
      * @return array
      */
-    public function tokenize(string $text, int $start = 1, int $end = 1, int $topN = 5, bool $useMMR = true, float $diversity = 0.0): array
+    public function extract(string $text, int $start = 1, int $end = 1, int $topN = 5, bool $useMMR = true, float $diversity = 0.0): array
     {
         $data = $this->makeRequest("/keyw", [
             "text"      => $text,
