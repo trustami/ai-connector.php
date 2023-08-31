@@ -9,7 +9,7 @@ class NERTagger extends Connector
     }
 
     /**
-     * Summarize a text
+     * Extract named entities from text.
      *
      * @param string $text
      * @param string $language

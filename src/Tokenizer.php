@@ -9,7 +9,7 @@ class Tokenizer extends Connector
     }
 
     /**
-     * Summarize a text
+     * Tokenize a text
      *
      * @param string $text
      * @param bool $advanced

@@ -9,7 +9,7 @@ class KeywordExtractor extends Connector
     }
 
     /**
-     * Summarize a text
+     * Extract keywords from a text
      *
      * @param string $text
      * @param int $start
