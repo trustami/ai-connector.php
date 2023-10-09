@@ -23,12 +23,12 @@ class Sentiment extends Connector
         $polarity = $data["polarity"] ?? false;
         $score    = $data["score"] ?? false;
 
-        if (!$polarity || is_numeric($score)) {
+        if (!$polarity || !is_numeric($score)) {
             throw new \Exception("Failed to analyze sentiment");
         }
 
         return [
-            "polarity" => $polarity,
+            "polarity" => strtolower($polarity),
             "score"    => $score,
         ];
     }
